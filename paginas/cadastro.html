@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vinicius Martins - IFSP Connect</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <iframe src="header.html" frameborder="0" width="100%" id="iheader"></iframe>
+    </header>
+
+    <main>
+        <h1>Cadastro de Usuários</h1>
+
+        <form>
+            <label>
+                <span class="input_name">Nome Completo</span>
+                <input type="text" name="NOME">
+            </label>
+            <label>
+                <span class="input_name">E-mail Institucional</span>
+                <input type="email" name="EMAIL">
+            </label>
+            <label>
+                <span class="input_name">Senha</span>
+                <input type="password" name="SENHA">
+            </label>
+            <label>
+                <span class="input_name">Curso</span>
+                <select name="CURSO">
+                    <option value="ADS">ADS - Análise e Desenvolvimento de Sistemas</option>
+                    <option value="TDS">TDS - Técnico em Desenvolvimento de Sistemas</option>
+                    <option value="ECO">ECO - Engenharia da Computação</option>
+                </select>
+            </label>
+
+            <div>
+                <span class="input_name">Turno:</span>
+
+                <label>
+                    Manhã
+                    <input type="radio" name="TURNO" value="1">
+                </label>
+                <label>
+                    Noite
+                    <input type="radio" name="TURNO" value="2">
+                </label>
+            </div>
+
+            <div>
+                <span class="input_name">Selecione seus Interesses:</span>
+
+                <label>
+                    HTML
+                    <input type="checkbox">
+                </label>
+                <label>
+                    CSS
+                    <input type="checkbox">
+                </label>
+                <label>
+                    JavaScript
+                    <input type="checkbox">
+                </label>
+
+                <label>
+                    PHP
+                    <input type="checkbox">
+                </label>
+                <label>
+                    Ruby
+                    <input type="checkbox">
+                </label>
+            </div>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </main>
+
+    <a href="#iheader" id="btn_topo">Voltar ao topo</a>
+
+    <footer>
+        <iframe src="footer.html" frameborder="0" width="100%" id="ifooter"></iframe>
+    </footer>
+</body>
+
+</html>
