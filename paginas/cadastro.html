@@ -30,14 +30,30 @@
             </label>
             <label>
                 <span class="input_name">Curso</span>
-                <select name="CURSO">
+                <select name="CURSO" required>
                     <option value="ADS">ADS - Análise e Desenvolvimento de Sistemas</option>
                     <option value="TDS">TDS - Técnico em Desenvolvimento de Sistemas</option>
                     <option value="ECO">ECO - Engenharia da Computação</option>
+                    <option value="ECA">ECA - Engenharia de Controle e Automação</option>
+                    <option value="LIM">LIM - Licenciatura em Matemática</option>
                 </select>
             </label>
-
-            <div>
+            <label>
+                <span class="input_name">Semestre</span>
+                <select name="SEMESTRE" required>
+                    <option value="1">1º semestre</option>
+                    <option value="2">2º semestre</option>
+                    <option value="3">3º semestre</option>
+                    <option value="4">4º semestre</option>
+                    <option value="5">5º semestre</option>
+                    <option value="6">6º semestre</option>
+                    <option value="7">7º semestre</option>
+                    <option value="8">8º semestre</option>
+                    <option value="9">9º semestre</option>
+                    <option value="10">10º semestre</option>
+                </select>
+            </label>
+            <div class="opcoes">
                 <span class="input_name">Turno:</span>
 
                 <label>
@@ -45,36 +61,161 @@
                     <input type="radio" name="TURNO" value="1">
                 </label>
                 <label>
-                    Noite
+                    Tarde
                     <input type="radio" name="TURNO" value="2">
                 </label>
+                <label>
+                    Noite
+                    <input type="radio" name="TURNO" value="3">
+                </label>
+                <label>
+                    Integral
+                    <input type="radio" name="TURNO" value="4">
+                </label>
             </div>
+            <div class="opcoes">
+                <span class="input_name">Situação:</span>
 
-            <div>
+                <label>
+                    Aluno
+                    <input type="radio" name="SITUACAO" value="aluno">
+                </label>
+                <label>
+                    Egresso
+                    <input type="radio" name="SITUACAO" value="egresso">
+                </label>
+                <label>
+                    Servidor
+                    <input type="radio" name="SITUACAO" value="servidor">
+                </label>
+            </div>
+            
+            <div class="opcoes">
                 <span class="input_name">Selecione seus Interesses:</span>
 
                 <label>
-                    HTML
-                    <input type="checkbox">
+                    Assembly
+                    <input type="checkbox" name="INTERESSES" value="Assembly">
                 </label>
                 <label>
-                    CSS
-                    <input type="checkbox">
+                    C
+                    <input type="checkbox" name="INTERESSES" value="C">
                 </label>
                 <label>
-                    JavaScript
-                    <input type="checkbox">
+                    C++
+                    <input type="checkbox" name="INTERESSES" value="C++">
                 </label>
-
                 <label>
-                    PHP
-                    <input type="checkbox">
+                    R
+                    <input type="checkbox" name="INTERESSES" value="R">
+                </label>
+                <label>
+                    Lua
+                    <input type="checkbox" name="INTERESSES" value="Lua">
                 </label>
                 <label>
                     Ruby
-                    <input type="checkbox">
+                    <input type="checkbox" name="INTERESSES" value="Ruby">
+                </label>
+                <label>
+                    Python
+                    <input type="checkbox" name="INTERESSES" value="Python">
+                </label>
+                <label>
+                    Java
+                    <input type="checkbox" name="INTERESSES" value="Java">
+                </label>
+                <label>
+                    Banco de Dados
+                    <input type="checkbox" name="INTERESSES" value="Banco de Dados">
+                </label>
+                <label>
+                    HTML
+                    <input type="checkbox" name="INTERESSES" value="HTML">
+                </label>
+                <label>
+                    CSS
+                    <input type="checkbox" name="INTERESSES" value="CSS">
+                </label>
+                <label>
+                    JavaScript
+                    <input type="checkbox" name="INTERESSES" value="JavaScript">
+                </label>
+                <label>
+                    PHP
+                    <input type="checkbox" name="INTERESSES" value="PHP">
+                </label>
+                <label>
+                    Eletrônica
+                    <input type="checkbox" name="INTERESSES" value="Eletrônica">
+                </label>
+                <label>
+                    Robótica
+                    <input type="checkbox" name="INTERESSES" value="Robótica">
+                </label>
+                <label>
+                    Matmática
+                    <input type="checkbox" name="INTERESSES" value="Matemática">
+                </label>
+                <label>
+                    Física
+                    <input type="checkbox" name="INTERESSES" value="Física">
+                </label>
+                <label>
+                    Química
+                    <input type="checkbox" name="INTERESSES" value="Química">
+                </label>
+                <label>
+                    Controle
+                    <input type="checkbox" name="INTERESSES" value="Controle">
+                </label>
+                <label>
+                    Embarcados
+                    <input type="checkbox" name="INTERESSES" value="Embarcados">
+                </label>
+                <label>
+                    Inteligência Arficial
+                    <input type="checkbox" name="INTERESSES" value="IA">
                 </label>
             </div>
+            <div class="opcoes">
+                <span class="input_name">Atividades de Interesse:</span>
+
+                <label>
+                    Iniciação Científica
+                    <input type="checkbox" name="ATIVIDADES" value="iniciacao">
+                </label>
+                <label>
+                    Monitoria
+                    <input type="checkbox" name="ATIVIDADES" value="monitoria">
+                </label>
+                <label>
+                    Extensão
+                    <input type="checkbox" name="ATIVIDADES" value="extensao">
+                </label>
+                <label>
+                    Estágio
+                    <input type="checkbox" name="ATIVIDADES" value="estagio">
+                </label>
+                <label>
+                    Eventos e Congressos
+                    <input type="checkbox" name="ATIVIDADES" value="eventos">
+                </label>
+            </div>
+            <label>
+                <span class="input_name">Como conheceu o IFSP Connect?</span>
+                <select name="ORIGEM">
+                    <option value="amigos">Amigos</option>
+                    <option value="professores">Professores</option>
+                    <option value="redes">Redes sociais</option>
+                    <option value="site">Site do IFSP</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </label>
+            <label>
+                <span class="input_name">Sobre Você</span>
+                <textarea name="SOBRE" maxlength="300" placeholder="Conte um pouco sobre você..."></textarea>
+            </label>
 
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">

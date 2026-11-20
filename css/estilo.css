@@ -348,6 +348,22 @@ video, audio {
     margin-bottom: 20px;
 }
 
+form textarea {
+    display: block;
+    width: 100%;
+    min-height: 120px;
+    border: 2px solid #0b6b3a;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 1.1rem;
+    resize: vertical;
+}
+
+.opcoes label {
+    display: inline-block;
+    margin: 6px 20px 6px 0;
+}
+
 #btn_topo {
     background-color: #084c2a;
     padding: 10px;
