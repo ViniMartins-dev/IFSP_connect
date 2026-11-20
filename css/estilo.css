@@ -364,6 +364,23 @@ form textarea {
     margin: 6px 20px 6px 0;
 }
 
+.pagina-projeto {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+}
+
+.pagina-projeto header,
+.pagina-projeto footer {
+    flex: none;
+}
+
+#iprojeto {
+    flex: 1;
+    min-height: 0;
+}
+
 #btn_topo {
     background-color: #084c2a;
     padding: 10px;
